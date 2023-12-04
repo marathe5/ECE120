@@ -60,9 +60,9 @@ ENDROW		LD R0, NEWLINE ; sets up encoding to end line. essentially to go to the 
 DONE 		HALT ; halts the program
 NEWLINE		.FILL x0A ; character to start at new line
 ZERO		.FILL x5000 ; character assigned to the '0' bits and should be printed if font data is 0
-ONE			.FILL x5001 ; character assigned to the '1' bits and should be printed if font data is 1
+ONE		.FILL x5001 ; character assigned to the '1' bits and should be printed if font data is 1
 
-FONT_DATA	;font data. 4096 lines for all 256 ascii characters		
+FONT_DATA		
 	.FILL	x0000 
 	.FILL	x0000
 	.FILL	x0000
